@@ -2,7 +2,10 @@
 
 # Take input from user
 weight = float(input("Enter your weight (in kg): "))
-height = float(input("Enter your height (in meters): "))
+height = float(input("Enter your height (in centimeter): "))
+
+# Convert cm to meters
+height_m = height_cm / 100
 
 # Calculate BMI
 bmi = weight / (height ** 2)
